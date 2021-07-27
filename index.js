@@ -28,7 +28,7 @@ app.get('/',(req, res)=>{
     res.send('Hola Mundo');
 });
 
-//Iniciar servidor
-app.listen(PORT, ()=>{
+//Arrancamos el servidor//Tanto el puerto (PORT) como el dominio ('0.0.0.0') lo va a asignar Heroku
+app.listen(PORT, '0.0.0.0', ()=>{
     console.log(`El servidor esta funcionando en el puerto ${PORT}`)
 });
